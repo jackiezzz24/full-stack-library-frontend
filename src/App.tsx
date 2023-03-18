@@ -1,3 +1,4 @@
+import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { Homepage } from './Layouts/Homepage/Homepage';
 import { Footer } from './Layouts/NavbarAndFooter/Footer';
@@ -6,10 +7,21 @@ import { SearchBooksPage } from './Layouts/SearchBooksPage/SearchBooksPage';
 
 export const App = () => {
   return (
-    <div>
+    <div className='d-flex flex-column min-vh-100'>
       <Navbar/>
-      {/* <Homepage/> */}
-      <SearchBooksPage/>
+      <div className='flex-grow-1'>
+        <Switch>
+          <Route path='/' exact>
+            <Redirect to='/home' />
+          </Route>
+          <Route path='/home'>
+            <Homepage/>
+          </Route>
+          <Route path='/search'>
+          <SearchBooksPage/>
+          </Route>
+        </Switch>
+      </div>
       <Footer/>
     </div>
   );
