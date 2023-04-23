@@ -5,11 +5,11 @@ import { LibraryServices } from "./components/LibraryServices";
 
 export const Homepage = () => {
   return (
-    <>
-      <ExploreTopBooks />
-      <Carousel />
-      <Heros />
-      <LibraryServices />
-    </>
+      <>
+          <ExploreTopBooks/>
+          <Carousel/>
+          <Heros/>
+          <LibraryServices/>
+      </>
   );
-};
+}
