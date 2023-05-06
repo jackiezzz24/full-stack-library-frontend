@@ -106,7 +106,7 @@ export const Loans = () => {
                                         <img src={shelfCurrentLoan.book?.img} width='226' height='349' alt='Book'/>
                                         :
                                         <img src={require('./../../../Images/BooksImages/book-luv2code-1000.png')} 
-                                            width='226' height='349' alt='Book'/>
+                                            width='226' height='349' alt='Default'/>
                                     }
                                 </div>
                                 <div className='card col-3 col-md-3 container d-flex'>
@@ -178,7 +178,7 @@ export const Loans = () => {
                                         <img src={shelfCurrentLoan.book?.img} width='226' height='349' alt='Book'/>
                                         :
                                         <img src={require('./../../../Images/BooksImages/book-luv2code-1000.png')} 
-                                            width='226' height='349' alt='Book'/>
+                                            width='226' height='349' alt='Default'/>
                                     }
                                 </div>
                                 <div className='card d-flex mt-5 mb-3'>
