@@ -13,6 +13,7 @@ import { Footer } from './Layouts/NavbarAndFooter/Footer';
 import { ShelfPage } from './Layouts/ShelfPage/ShelfPage';
 import { Homepage } from './Layouts/Homepage/Homepage';
 import { MessagesPage } from './Layouts/MessagesPage/MessagesPage';
+import { ManageLibraryPage } from './Layouts/ManageLibraryPage/ManageLibraryPage';
 
 
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -58,6 +59,7 @@ export const App = () => {
           <Route path='/login/callback' component={LoginCallback} />
           <SecureRoute path='/shelf'> <ShelfPage/> </SecureRoute>
           <SecureRoute path='/messages'> <MessagesPage/> </SecureRoute>
+          <SecureRoute path='/admin'> <ManageLibraryPage/> </SecureRoute>
         </Switch>
       </div>
       <Footer />
