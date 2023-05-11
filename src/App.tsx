@@ -14,6 +14,7 @@ import { ShelfPage } from './Layouts/ShelfPage/ShelfPage';
 import { Homepage } from './Layouts/Homepage/Homepage';
 import { MessagesPage } from './Layouts/MessagesPage/MessagesPage';
 import { ManageLibraryPage } from './Layouts/ManageLibraryPage/ManageLibraryPage';
+import { PaymentPage } from './Layouts/PaymentPage/PaymentPage';
 
 
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -60,6 +61,7 @@ export const App = () => {
           <SecureRoute path='/shelf'> <ShelfPage/> </SecureRoute>
           <SecureRoute path='/messages'> <MessagesPage/> </SecureRoute>
           <SecureRoute path='/admin'> <ManageLibraryPage/> </SecureRoute>
+          <SecureRoute path='/fees'> <PaymentPage/> </SecureRoute>
         </Switch>
       </div>
       <Footer />
