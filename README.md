@@ -1,4 +1,4 @@
-# Full Stack Library Management Application
+# Full Stack Library Management Application - Front End
 
 +	Developed a Full Stack library management application with React front-end and Spring Boot back-end.
 + Connected JPA repository to MySQL to store data of employee and department. 
